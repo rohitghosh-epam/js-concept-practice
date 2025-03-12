@@ -48,7 +48,7 @@ const updateThrottledCount = () => {
 
 // Create debounced and throttled versions of the functions
 const debouncedUpdate = debounce(updateDebouncedCount, 1000); // 1s delay
-const throttledUpdate = throttle(updateThrottledCount, 2000); // 2s interval
+const throttledUpdate = throttle(updateThrottledCount, 10000); // 2s interval
 
 // Add event listener to button
 clickBtn.addEventListener('click', () => {
