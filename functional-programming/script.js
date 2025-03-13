@@ -14,7 +14,7 @@ const diameter = function (radius) {
 
 // My own Map function with built-in map like features
 
-const calculate = function (logic) {
+Array.prototype.calculate = function (logic) {
     const output = [];
     for(let i=0; i<this.length; i++) {
         output.push(logic(this[i]));
