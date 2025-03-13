@@ -20,7 +20,7 @@ const output1 = users.filter( (current) => current.age < 35).map( (current) => c
 console.log(output1);
 
 
-// Doing the same problem with Reduce Function
+// Doing the same problem with Reduce Function only
 const output2 = users.reduce( function (acc, current) {
     if(current.age < 35) acc.push(current.first);
     return acc;
